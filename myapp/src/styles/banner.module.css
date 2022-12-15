@@ -1,0 +1,556 @@
+body {
+  font-family: 'Space Mono', monospace;
+  overflow-x: hidden;
+}
+
+.banner {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.banner > div {
+  height: 100%;
+  width: 40%;
+}
+
+.banner > div:nth-child(1) {
+  margin-top: 2rem;
+}
+.banner > div:nth-child(2) {
+  z-index: 1;
+}
+.banner > div:nth-child(2) > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.text {
+  margin-top: 6rem;
+  margin-left: 1.8rem;
+}
+
+.text > p:nth-child(1) {
+  font-size: 4rem;
+  font-weight: 1000;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+.text > p:nth-child(1) > p {
+  padding: 0;
+  margin: 0;
+}
+
+.text > p:nth-child(2) {
+  margin-top: 2.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 0.4;
+  width: 120%;
+  word-spacing: normal;
+}
+
+.text > p:nth-child(1) {
+  position: relative;
+}
+
+.text > p:nth-child(1)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  top: 0.1rem;
+  background-color: white;
+  border-left: 2px solid black;
+  animation: typing1 0.5s steps(6) forwards;
+}
+
+@keyframes typing1 {
+  100% {
+    left: 50%;
+    border-left: 2px solid white;
+  }
+}
+
+.text > p:nth-child(1) > p::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 60%;
+  width: 100%;
+  top: 4rem;
+  background-color: white;
+  animation: typing2 1s steps(11) forwards;
+}
+
+@keyframes typing2 {
+  50% {
+    left: 0%;
+  }
+
+  100% {
+    left: 100%;
+    border-left: 2px solid black;
+  }
+}
+
+.text > p:nth-child(2) {
+  position: relative;
+}
+
+.text > p:nth-child(2)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 60%;
+  width: 100%;
+  top: -0.2rem;
+  background-color: white;
+  animation: typing3 1.7s steps(35) forwards;
+}
+
+@keyframes typing3 {
+  0% {
+    left: 0%;
+  }
+  10% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  30% {
+    left: 0%;
+  }
+  40% {
+    left: 0%;
+  }
+  50% {
+    left: 0%;
+  }
+  60% {
+    left: 20%;
+  }
+  70% {
+    left: 40%;
+  }
+  80% {
+    left: 60%;
+  }
+  90% {
+    left: 75%;
+  }
+  100% {
+    left: 80%;
+    border-left: 2px solid white;
+  }
+}
+
+.text > p:nth-child(2) > p::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 60%;
+  width: 100%;
+  top: 1.5rem;
+  background-color: white;
+  animation: typing4 2.55s steps(30) forwards;
+}
+
+@keyframes typing4 {
+  0% {
+    left: 0%;
+  }
+  10% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  30% {
+    left: 0%;
+  }
+  40% {
+    left: 0%;
+  }
+  50% {
+    left: 0%;
+  }
+  60% {
+    left: 0%;
+  }
+  70% {
+    left: 25%;
+  }
+  80% {
+    left: 50%;
+  }
+  90% {
+    left: 75%;
+  }
+  100% {
+    left: 90%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .text > p:nth-child(1) {
+    font-size: 3rem;
+  }
+
+  .text > p:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 40%;
+    width: 50%;
+    top: 0.1rem;
+    background-color: white;
+    border-left: 2px solid black;
+
+    animation: typing1 0.5s steps(5) forwards;
+  }
+
+  @keyframes typing1 {
+    100% {
+      left: 50%;
+      border-left: 2px solid white;
+    }
+  }
+
+  .text > p:nth-child(1) > p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    top: 3.2rem;
+    background-color: white;
+
+    animation: typing2 1s steps(11) forwards;
+  }
+
+  @keyframes typing2 {
+    50% {
+      left: 0%;
+    }
+
+    100% {
+      left: 100%;
+      border-left: 2px solid black;
+    }
+  }
+
+  @keyframes typing3 {
+    0% {
+      left: 0%;
+    }
+    10% {
+      left: 0%;
+    }
+    20% {
+      left: 0%;
+    }
+    30% {
+      left: 0%;
+    }
+    40% {
+      left: 0%;
+    }
+    50% {
+      left: 0%;
+    }
+    60% {
+      left: 20%;
+    }
+    70% {
+      left: 40%;
+    }
+    80% {
+      left: 60%;
+    }
+    90% {
+      left: 75%;
+    }
+    100% {
+      left: 90%;
+      border-left: 2px solid white;
+    }
+  }
+
+  @keyframes typing4 {
+    0% {
+      left: 0%;
+    }
+    10% {
+      left: 0%;
+    }
+    20% {
+      left: 0%;
+    }
+    30% {
+      left: 0%;
+    }
+    40% {
+      left: 0%;
+    }
+    50% {
+      left: 0%;
+    }
+    60% {
+      left: 0%;
+    }
+    70% {
+      left: 25%;
+    }
+    80% {
+      left: 50%;
+    }
+    90% {
+      left: 75%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .text > p:nth-child(1) {
+    font-size: 2rem;
+  }
+  .text > p:nth-child(2) {
+    font-size: 1rem;
+  }
+
+  .text > p:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 50%;
+    width: 50%;
+    top: -0.2rem;
+    background-color: white;
+    border-left: 2px solid black;
+    animation: typing1 0.5s steps(6) forwards;
+  }
+
+  @keyframes typing1 {
+    100% {
+      left: 50%;
+      border-left: 2px solid white;
+    }
+  }
+
+  .text > p:nth-child(1) > p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    top: 2.2rem;
+    background-color: white;
+    animation: typing2 1s steps(11) forwards;
+  }
+
+  @keyframes typing2 {
+    50% {
+      left: 0%;
+    }
+
+    100% {
+      left: 80%;
+      border-left: 2px solid black;
+    }
+  }
+
+  .text > p:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 60%;
+    width: 100%;
+    top: -0.3rem;
+    background-color: white;
+    animation: typing3 1.7s steps(35) forwards;
+  }
+
+  @keyframes typing3 {
+    0% {
+      left: 0%;
+    }
+    10% {
+      left: 0%;
+    }
+    20% {
+      left: 0%;
+    }
+    30% {
+      left: 0%;
+    }
+    40% {
+      left: 0%;
+    }
+    50% {
+      left: 0%;
+    }
+    60% {
+      left: 20%;
+    }
+    70% {
+      left: 40%;
+    }
+    80% {
+      left: 60%;
+    }
+    90% {
+      left: 75%;
+    }
+    100% {
+      left: 80%;
+      border-left: 2px solid white;
+    }
+  }
+
+  .text > p:nth-child(2) > p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 60%;
+    width: 100%;
+    top: 1.2rem;
+    background-color: white;
+    animation: typing4 2.55s steps(30) forwards;
+  }
+
+  @keyframes typing4 {
+    0% {
+      left: 0%;
+    }
+    10% {
+      left: 0%;
+    }
+    20% {
+      left: 0%;
+    }
+    30% {
+      left: 0%;
+    }
+    40% {
+      left: 0%;
+    }
+    50% {
+      left: 0%;
+    }
+    60% {
+      left: 0%;
+    }
+    70% {
+      left: 25%;
+    }
+    80% {
+      left: 50%;
+    }
+    90% {
+      left: 75%;
+    }
+    100% {
+      left: 90%;
+      border-left: 1px solid white;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .text > p:nth-child(1) {
+    font-size: 2.5rem;
+  }
+  .text > p:nth-child(2) {
+    font-size: 1.5rem;
+  }
+  .banner {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner > div {
+    height: 100%;
+    width: 90%;
+  }
+
+  .text > p:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 0%;
+    width: 0%;
+    top: -0.2rem;
+    background-color: white;
+    border-left: 2px solid black;
+    animation: none;
+  }
+  .text > p:nth-child(1) > p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 00%;
+    width: 00%;
+    top: 2.2rem;
+    background-color: white;
+    animation: none;
+  }
+
+  .text > p:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 0%;
+    width: 0%;
+    top: -0.3rem;
+    background-color: white;
+    animation: none;
+  }
+  .text > p:nth-child(2) > p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 0%;
+    width: 0%;
+    top: 1.2rem;
+    background-color: white;
+    animation: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .banner > div {
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid green; */
+  }
+  .banner > div:nth-child(1) {
+    margin-top: 0rem;
+  }
+  .text > p:nth-child(1) {
+    font-size: 2rem;
+  }
+  .text > p:nth-child(2) {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .text > p:nth-child(2) {
+    font-size: 0.8rem;
+  }
+}

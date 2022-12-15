@@ -1,0 +1,14 @@
+.navbar {
+  height: 50px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-top: 2rem;
+}
+
+.navbar > div:nth-child(2) {
+  font-size: 2rem;
+}
