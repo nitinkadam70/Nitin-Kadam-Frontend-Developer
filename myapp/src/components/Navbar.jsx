@@ -1,5 +1,5 @@
 import React from 'react';
-import { GiHamburgerMenu } from 'react-icons/gi';
+import { AiOutlineMenuUnfold } from 'react-icons/ai';
 import styles from '../styles/navbar.module.css';
 
 const Navbar = () => {
@@ -7,9 +7,7 @@ const Navbar = () => {
     <nav>
       <div className={styles.navbar}>
         <div></div>
-        <div>
-          <GiHamburgerMenu />
-        </div>
+        <div>Menu</div>
       </div>
     </nav>
   );
