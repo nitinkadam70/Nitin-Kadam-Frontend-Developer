@@ -16,12 +16,6 @@ const Banner = () => {
             </p>
           </div>
         </div>
-        <div>
-          <img
-            src="http://res.cloudinary.com/dvakewn1g/image/upload/v1669551327/gjkxoepgnapmxjisefkc.png"
-            alt=""
-          />
-        </div>
       </div>
     </section>
   );

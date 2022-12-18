@@ -1,0 +1,55 @@
+.filters {
+  width: 84%;
+  margin: auto;
+  background-color: #333;
+  color: white;
+}
+
+.filters_div {
+  display: flex;
+  width: 80%;
+  gap: 2rem;
+}
+
+.status {
+  height: 30px;
+  width: 150px;
+  border: 1px solid grey;
+}
+
+.status > option {
+  font-size: 1rem;
+  font-family: 'Space Mono', monospace;
+}
+
+.input {
+  height: 32px;
+  font-family: 'Space Mono', monospace;
+}
+
+.input_time {
+  height: 25px;
+  font-family: 'Space Mono', monospace;
+}
+
+@media (max-width: 768px) {
+  .filters_div {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  .input_time {
+    width: 60%;
+  }
+}
+
+.button_div > button {
+  border-radius: 10px;
+  border: 2px solid grey;
+  background-color: transparent;
+  padding: 0.5rem 3rem;
+  margin-top: 1.2rem;
+  cursor: pointer;
+  background-color: white;
+}

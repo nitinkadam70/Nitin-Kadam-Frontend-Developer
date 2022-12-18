@@ -1,23 +1,19 @@
 body {
   font-family: 'Space Mono', monospace;
-  overflow-x: hidden;
 }
 
 .banner {
-  height: 500px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
+  height: 80vh;
+  width: 100vw;
+  background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Homepage_Desktop_5ebdeb0c6c.webp');
+  background-size: cover;
+  color: white;
 }
-
 .banner > div {
-  height: 100%;
-  width: 40%;
+  position: absolute;
+  left: 0;
+  width: 500px;
 }
-
 .banner > div:nth-child(1) {
   margin-top: 2rem;
 }
@@ -68,7 +64,6 @@ body {
   height: 50%;
   width: 50%;
   top: 0.1rem;
-  background-color: white;
   border-left: 2px solid black;
   animation: typing1 0.5s steps(6) forwards;
 }
@@ -76,7 +71,7 @@ body {
 @keyframes typing1 {
   100% {
     left: 50%;
-    border-left: 2px solid white;
+    border-left: 2px solid black;
   }
 }
 
@@ -87,7 +82,7 @@ body {
   height: 60%;
   width: 100%;
   top: 4rem;
-  background-color: white;
+  background-color: black;
   animation: typing2 1s steps(11) forwards;
 }
 
@@ -113,7 +108,7 @@ body {
   height: 60%;
   width: 100%;
   top: -0.2rem;
-  background-color: white;
+  background-color: black;
   animation: typing3 1.7s steps(35) forwards;
 }
 
@@ -150,7 +145,7 @@ body {
   }
   100% {
     left: 80%;
-    border-left: 2px solid white;
+    border-left: 2px solid black;
   }
 }
 
@@ -161,7 +156,7 @@ body {
   height: 60%;
   width: 100%;
   top: 1.5rem;
-  background-color: white;
+  background-color: black;
   animation: typing4 2.55s steps(30) forwards;
 }
 
@@ -213,8 +208,8 @@ body {
     height: 40%;
     width: 50%;
     top: 0.1rem;
-    background-color: white;
-    border-left: 2px solid black;
+    background-color: black;
+    border-left: 2px solid white;
 
     animation: typing1 0.5s steps(5) forwards;
   }
@@ -233,7 +228,7 @@ body {
     height: 50%;
     width: 100%;
     top: 3.2rem;
-    background-color: white;
+    background-color: black;
 
     animation: typing2 1s steps(11) forwards;
   }
@@ -338,7 +333,7 @@ body {
     height: 50%;
     width: 50%;
     top: -0.2rem;
-    background-color: white;
+    background-color: black;
     border-left: 2px solid black;
     animation: typing1 0.5s steps(6) forwards;
   }
@@ -357,7 +352,7 @@ body {
     height: 50%;
     width: 100%;
     top: 2.2rem;
-    background-color: white;
+    background-color: black;
     animation: typing2 1s steps(11) forwards;
   }
 
@@ -379,7 +374,7 @@ body {
     height: 60%;
     width: 100%;
     top: -0.3rem;
-    background-color: white;
+    background-color: black;
     animation: typing3 1.7s steps(35) forwards;
   }
 
@@ -427,7 +422,7 @@ body {
     height: 60%;
     width: 100%;
     top: 1.2rem;
-    background-color: white;
+    background-color: black;
     animation: typing4 2.55s steps(30) forwards;
   }
 
@@ -495,7 +490,7 @@ body {
     height: 0%;
     width: 0%;
     top: -0.2rem;
-    background-color: white;
+    background-color: black;
     border-left: 2px solid black;
     animation: none;
   }
